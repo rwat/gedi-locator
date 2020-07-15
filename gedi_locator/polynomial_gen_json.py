@@ -324,10 +324,10 @@ def do(input_filenames, input_path, output_path):
 if __name__ == '__main__':
     start_time = time.time()
     
-    #with Pool(multiprocessing.cpu_count()) as p:
-    #   p.starmap(do, [[[x], INPUT_PATH, OUTPUT_PATH] for x in (get_filenames(INPUT_PATH))])
+    with Pool(multiprocessing.cpu_count()) as p:
+       p.starmap(do, [[[x], INPUT_PATH, OUTPUT_PATH] for x in (get_filenames(INPUT_PATH))])
 
     #do((get_filenames(INPUT_PATH))[8:9], INPUT_PATH, OUTPUT_PATH)
-    do(['GEDI01_B_2019108002011_O01959_T03909_02_003_01'], INPUT_PATH, OUTPUT_PATH)
+    #do(['GEDI01_B_2019108002011_O01959_T03909_02_003_01'], INPUT_PATH, OUTPUT_PATH)
 
     print('Total time taken: {0:.3f} seconds'.format(time.time() - start_time))
