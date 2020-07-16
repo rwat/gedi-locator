@@ -5,5 +5,5 @@ GEDI is a remote sensing instrument on the ISS and this is a WIP / prototype of 
 To learn more about this code you'll want to read the paper at [Element 84](http://element84.com).
 
 ### TODO
-- usage instructions
+- usage instructions (by July 19, 2020)
 - unit tests
