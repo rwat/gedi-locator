@@ -79,7 +79,7 @@ def extract_coords():
                         json.dump(output_data, output_file)
 ```
 
-### Fit Polynomials By Dynamic Partition
+### Fit Polynomials By Dynamically-Sized Partition
 
 Take the Lat/Lon layers for each orbit and fit polynomials to partitioned orbits with `polynomial_get_json.py`. The way it's currently written it will run one process per orbit at a concurrency of `multiprocessing.cpu_count()`. In a `.env` file you'll need to specify your source and destination directories in accordance with `settings.py`.
 
