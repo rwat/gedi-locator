@@ -13,6 +13,15 @@ Here are the steps for using this prototype software:
 3. Run polynomial_gen_json.py on the extracted coordinates json to create orbital partitions data
 4. Run the search PoC which first loads the partitions data and then runs some benchmark searches
 
+Alternatively and for testing purposes I've provided pre-generated JSON for 5m error dynamic partitions (see paper above to know what that means) for data from the month of May 2019. Download either the .tar.gz or .zip, extract to a directory of your choice and then run `search.py` with the extracted contents as the `INPUT_PATH`.
+
+[gedi_json_dynpart_2019_05__05m.tar.gz](https://rwat.s3-us-west-2.amazonaws.com/github/gedi-locator/gedi_json_dynpart_2019_05__05m.tar.gz)
+
+[gedi_json_dynpart_2019_05__05m.zip](https://rwat.s3-us-west-2.amazonaws.com/github/gedi-locator/gedi_json_dynpart_2019_05__05m.zip)
+
+However, if you'd like to start from GEDI data please see the directions below.
+
+
 ### Download GEDI L1B granules
 
 GEDI L1B granules can be downloaded for free from NASA's LP DAAC Data Pool:
